@@ -31,6 +31,9 @@ import java.util.List;
  * Author by RuiGan
  */
 
+/**
+ * 第一次提交
+ */
 public class StrategyDetailListviewAdapter extends BaseAdapter implements View.OnClickListener {
     private Context context;
     List<StrategyDetailEntity.DataBean.SectionsBean> data;
