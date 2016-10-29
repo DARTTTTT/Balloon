@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/shapebg"
+    >
+    <!--scrollview中嵌套的大的子布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+        <!--大的城市背景图片-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#dbdbdb">
+
+            <ImageView
+                android:id="@+id/asd_iv_bg"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop" />
+            <!--返回的图片-->
+            <ImageView
+                android:id="@+id/asd_back"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:onClick="btnClick"
+                android:src="@mipmap/default_back_icon" />
+            <!--图片文字-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/asd_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="城市"
+                    android:textColor="#ffffff"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android:id="@+id/asd_name_en"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="Chengshi"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+
+
+                    />
+            </LinearLayout>
+
+
+        </FrameLayout>
+        <!--背景图片下的横向scrollview-->
+        <HorizontalScrollView
+            android:id="@+id/lv_sights_hsv"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/llgoods"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+        <!--分割线-->
+
+
+        <!--整体是一个listview-->
+
+        <com.qf.kenlibrary.widget.rewriterview.RewriteListView
+            android:id="@+id/strategy_lv"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            />
+    </LinearLayout>
+
+
+</ScrollView>

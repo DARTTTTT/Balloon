@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--动态添加相应的布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:background="#efeded" />
+        <!--title-->
+        <TextView
+            android:id="@+id/btn_title3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="氢游记"
+            android:textSize="15sp" />
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#dbdbdb" />
+        <ImageView
+            android:layout_margin="10dp"
+            android:id="@+id/models_content_photo"
+            android:layout_height="500dp"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:background="#e4e3e3"
+
+            />
+
+
+        <!--作者的一排-->
+       <LinearLayout
+           android:layout_height="60dp"
+           android:layout_width="match_parent"
+           android:orientation="horizontal"
+           >
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="by"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            />
+           <TextView
+               android:id="@+id/models_user_name"
+               android:layout_height="wrap_content"
+               android:layout_width="match_parent"
+               android:text="作者"
+               android:textSize="18sp"
+               android:layout_marginLeft="10dp"
+                android:textColor="@color/colorPrimary"
+               android:layout_gravity="center_vertical"
+
+               />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/models_content_topic"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="遇见谁的多少天"
+            android:textSize="18sp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/models_content_description"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:text="的说法是特殊法第三方的说法是范德萨发斯蒂芬斯蒂芬"
+           />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:gravity="center"
+        android:orientation="vertical">
+        <!--button_text-->
+        <TextView
+            android:id="@+id/button_text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="概览与地图什么的"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

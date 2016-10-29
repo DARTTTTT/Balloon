@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--头部标题-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:background="@color/colorPrimary"
+
+        >
+
+        <ImageView
+            android:id="@+id/route_back"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:onClick="btnClick"
+            android:src="@mipmap/default_back_icon" />
+
+        <TextView
+            android:id="@+id/route_tile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/route_back"
+            android:text="几日游"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+
+    <!--布局下面是一个大的scrollview-->
+  <!--  <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >-->
+        <!--子布局-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+            <!--背景图片-->
+           <!-- <FrameLayout
+                android:id="@+id/fl_route"
+                android:layout_width="match_parent"
+                android:layout_height="400dp">
+
+                <ImageView
+                    android:id="@+id/route_imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#e4e3e3"
+                    android:src="@mipmap/icon_wish_empty" />
+
+                <Button
+                    android:id="@+id/btn_route_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/button_shape"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </FrameLayout>-->
+
+            <ListView
+                android:id="@+id/route_parent_lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+ <!--   </ScrollView>-->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="复制这条行程"
+        android:textColor="#ffffff"
+        android:layout_margin="10dp"
+        android:background="#9dde5c"
+        />
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wrg.balloontrip.main.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <!--头部搜索的-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <!--输入搜索框-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/icon_search" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="?android:actionBarSize"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:hint="搜索目的地 游记与用户"
+                    android:textColorHint="@color/colorWord" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="center"
+            app:tabSelectedTextColor="#dbdbdb"
+            android:background="@color/colorPrimary"
+            app:tabTextAppearance="@style/MyTablayoutTextShow"
+            app:tabTextColor="#ffffff"
+
+            />
+    </android.support.design.widget.AppBarLayout>
+    <!-- &lt;!&ndash;横向的&ndash;&gt;
+     <HorizontalScrollView
+         android:id="@+id/hsv"
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:layout_gravity="center"
+         android:scrollbars="none">
+         &lt;!&ndash;整体的布局是垂直的&ndash;&gt;
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+
+
+             <LinearLayout
+                 android:id="@+id/lltab"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal" />
+             &lt;!&ndash;指示器&ndash;&gt;
+             <View
+                 android:id="@+id/viwer"
+                 android:layout_width="60dp"
+                 android:layout_height="5dp"
+                 android:background="#ffffff"
+                 />
+
+         </LinearLayout>
+     </HorizontalScrollView>
+-->
+    <!--控件的使用tablayout-->
+
+
+    <!--下面全部的总体布局是viewpager-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</android.support.design.widget.CoordinatorLayout>

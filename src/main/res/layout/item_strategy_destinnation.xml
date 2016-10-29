@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--动态添加相应的布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:background="#efeded" />
+        <!--title-->
+        <TextView
+            android:id="@+id/btn_title0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="目的地"
+            android:textSize="15sp" />
+
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#dbdbdb" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/llmodels"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" />
+
+
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dbdbdb" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:gravity="center"
+        android:orientation="vertical">
+        <!--button_text-->
+        <TextView
+            android:id="@+id/button_text0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="概览与地图什么的"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</LinearLayout>

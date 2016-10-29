@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--动态添加相应的布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:background="#efeded" />
+        <!--title-->
+        <TextView
+            android:id="@+id/btn_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="目的地"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:background="@color/colorbackground"
+            android:layout_margin="10dp"
+            >
+          <TextView
+              android:id="@+id/asd_sections_title"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical"
+              android:text="自定义行程:收藏榜单后自动生成行程"
+              android:textSize="18sp" />
+
+            </LinearLayout>
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#dbdbdb" />
+
+       <!-- <FrameLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            >
+            <ImageView
+                android:id="@+id/models_cover"
+                android:layout_height="300dp"
+                android:layout_width="match_parent"
+                android:background="#e4e3e3"
+                />
+
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+
+                >
+                <TextView
+                    android:id="@+id/models_content_title"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="城市 旅行榜单"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/models_content_summary"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textColor="#ffffff"
+                    android:layout_gravity="center_horizontal"
+                    android:text="几条旅行灵感"
+                    />
+            </LinearLayout>
+        </FrameLayout>-->
+        <com.qf.kenlibrary.widget.rewriterview.RewriteListView
+            android:id="@+id/example_lv"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:gravity="center"
+        android:orientation="vertical">
+        <!--button_text-->
+        <TextView
+            android:id="@+id/button_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="概览与地图什么的"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

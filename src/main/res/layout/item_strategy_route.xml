@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--动态添加相应的布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:background="#efeded" />
+        <!--title-->
+        <TextView
+            android:id="@+id/btn_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="目的地"
+            android:textSize="15sp" />
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#dbdbdb" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@color/colorbackground">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="懒人行程:一键复制经典路线"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+<!--路线-->
+        <FrameLayout
+            android:id="@+id/fl_route"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/img_nodels_route"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#e4e3e3"
+                android:src="@mipmap/icon_wish_empty" />
+
+            <Button
+                android:id="@+id/btn_models_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_shape"
+                android:text="几日游"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            >
+
+            <RadioGroup
+                android:id="@+id/route_rg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+
+                >
+
+
+
+            </RadioGroup>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
